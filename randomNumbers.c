@@ -1,3 +1,4 @@
+/* Dealing with files and parameters */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
