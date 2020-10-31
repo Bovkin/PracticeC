@@ -4,6 +4,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+
+/* Colors */
 #define ANSI_COLOR_RED     "\x1b[31m"
 #define ANSI_COLOR_GREEN   "\x1b[32m"
 #define ANSI_COLOR_YELLOW  "\x1b[33m"
@@ -11,6 +13,8 @@
 #define ANSI_COLOR_MAGENTA "\x1b[35m"
 #define ANSI_COLOR_CYAN    "\x1b[36m"
 #define ANSI_COLOR_RESET   "\x1b[0m"
+
+/* Shift letters */
 
 #define JUMP 5
 
@@ -76,8 +80,8 @@ int main(){
 
     strcpy(cripAux, encrypt(string));
 
-    printf(ANSI_COLOR_RED "\tString encrypted:" ANSI_COLOR_RESET "%s\n" , cripAux);
+    printf(ANSI_COLOR_RED "\n\tString encrypted: " ANSI_COLOR_RESET "%s\n" , cripAux);
 
-    printf(ANSI_COLOR_BLUE "\tString decrypted:" ANSI_COLOR_RESET "%s\n", decrypt(cripAux));
+    printf(ANSI_COLOR_BLUE "\tString decrypted: " ANSI_COLOR_RESET "%s\n", decrypt(cripAux));
 
 }
